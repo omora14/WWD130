@@ -1,0 +1,27 @@
+aside {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  padding: 0;
+}
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
