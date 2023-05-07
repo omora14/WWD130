@@ -1,143 +1,80 @@
-/* Set default font family and background color */
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Set styles for the header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #5995ed;
-} 
+:root {
+  --primary-color: #0a369d;
+  --secondary-color: #253c78;
+  --accent1-color: #5995ed;
+  --accent2-color: #ffffff;
+  --heading-font: "Josefin Slab";
+  --paragraph-font: Abel, Helvetica, sans-serif;
+  --nav-backgroud-color: #FFFFFF;
+  --nav-link-color: #5995ed;
+  --nav-hover-link-color: #219EBC;
+  --nav-hover-background-color: #0a369d;
+}
 
-header img {
-  float: right;
+body {
+    font-family: var(--paragraph-font);
+    max-width: 800px;
+    padding: 20px;
+}
+
+header img{
+    width: 220px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 150%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
     width: 200px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 20px;
+.hero h1{
+    position: absolute;
+    background-color: hsla(195, 80%, 2%, 0.5);
+    width: 1140px;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-nav a:first-child {
-  margin-left: 0;
+.hero article {
+    position: absolute;
+    background-color: hsl(192, 70%, 43%, 0.5);
+    width: 900px;
+    top: 150px;
+    left: 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Set styles for the hero section */
-.hero {
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-  text-align: center;
-  background-image: url("path/to/image.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero2 {
-  float: right;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 10px;
-  box-shadow: 5px 5px 10px #888888;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 2px 2px #253c78;
-}
-
-.hero p {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 2px 2px #253c78;
-  max-width: 80%;
-}
-
-/* Set styles for the main section */
-main {
-  margin: 50px;
-  color: #000000;
-}
-
-main h2 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
-
-main p {
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Set styles for the testimonials section */
-.testimonials {
-  background-color: #f5f5f5;
-  padding: 50px;
-}
-
-.testimonials h2 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  color: #253c78;
-}
-
-.testimonial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.testimonial img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 5px solid #ffd700;
-}
-
-.testimonial h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.testimonial p {
-  font-size: 18px;
-  line-height: 1.5;
-  max-width: 60%;
-}
-
-/* Set styles for the footer */
 footer {
   background-color: #ffffff;
   color: #000000;
@@ -146,7 +83,7 @@ footer {
 }
 
 footer p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -160,6 +97,6 @@ footer .sociallinks {
 
 footer .sociallinks img {
   max-width: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 10px;
   background-color: #ffffff;
 }
