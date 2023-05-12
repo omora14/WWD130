@@ -13,7 +13,6 @@ header, .grid, footer {
   display: grid;
   align-items: center;
 
-
 }
 nav {
   background-color: steelblue;
