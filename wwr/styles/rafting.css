@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Slab:ital,wght@1,500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -20,18 +21,98 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 800px;
+    max-width: 940px;
     padding: 20px;
 }
 
+/* .history {
+    position: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/2;
+    grid-row: 1/2;
+} */
+.adventures figure {
+    width: 180px;
+} 
+
+.adventures {
+    display: flex;
+    max-width: 940px;
+    flex-wrap: wrap;
+
+}
+
+.adventures h2 {
+    display: flex;
+    flex-basis: 100%;
+    padding: 30px;
+    justify-content: center;
+}
+.history {
+    display: flex;
+    max-width: 940px;
+    flex-wrap: wrap;   
+}
+.history div {
+    width: 350px;
+    padding: 10px;
+
+}
+.history figure {
+    display: flex;
+    padding: 20px;
+}
+.history h2 {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+header {
+
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    gap: 20px;
+    align-items: center;
+    color: steelblue;
+    border-bottom: 1px solid steelblue;
+    padding: 0.5rem;
+    
+    
+}
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+header nav a{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+}
+
+nav a:hover {
+    color:#FB8500;
+    font-weight:  700;
+    text-decoration: underline;
+}
+
 header img{
-    width: 220px;
+    width: 90px;
+    /* height: auto; */
+    margin: 10px;
+    align-items: center;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    padding: 10px;  
+    padding: 10px;
 }
 
 .hero{
@@ -40,8 +121,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero img {
     display: block;
-    width: 150%;
+    width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 
 .hero article img {
@@ -54,8 +136,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero h1{
     position: absolute;
-    background-color: hsla(195, 80%, 2%, 0.5);
-    width: 1140px;
+    background-color: hsl(200, 95%, 14%, 0.5);
+    width: 900px;
     top: 50px;
     left: 0px;
     text-align: center;
@@ -65,24 +147,32 @@ h1, h2, h3, h4, h5, h6 {
 .hero article {
     position: absolute;
     background-color: hsl(192, 70%, 43%, 0.5);
-    width: 900px;
+    width: 800px;
     top: 150px;
-    left: 100px;
-    text-align: center;
+    left: 50px;
+    text-align: left;
     padding-top: 20px;
     padding-left: 10px;
+    
 }
 
 footer {
-  background-color: #ffffff;
-  color: #000000;
-  text-align: center;
-  padding: 20px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+footer nav{
+    display: flex;
+    justify-content: right;
 }
 
 footer p {
-  font-size: 15px;
-  line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sociallinks a{
+    padding: 10px;
 }
 
 footer .sociallinks {
