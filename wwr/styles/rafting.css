@@ -30,9 +30,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/2;
     grid-row: 1/2;
-    bad
 } */
-
 .adventures figure {
     width: 180px;
 } 
@@ -146,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
 }
 
+
 .hero article {
     position: absolute;
     background-color: hsl(192, 70%, 43%, 0.5);
@@ -170,9 +169,132 @@ footer nav{
 }
 
 footer p {
+    display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex-basis: 100%;
+    
 }
+
+.final{
+    display: flex;
+    flex-basis: 100%;
+    max-width: 790px; 
+}
+
+
+.sociallinks a{
+    padding: 10px;
+}
+
+/* contact us */
+
+/* main {
+    display: grid;
+    grid-column: 1/2;
+} */
+
+.contact {
+    display: flex;
+    max-width: 940px;
+    flex-wrap: wrap;
+    
+}
+
+.Info {
+    display: grid;
+    max-width: 440px;
+    /* flex-wrap: nowrap; */
+    margin-block: 2rem 0;  
+    font-size: 20px;
+}
+
+.map {
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+}
+
+
+.Comments {
+    display: flex;
+    max-width: 400px;
+    /* flex-wrap: wrap; */
+    padding: 1rem;
+    margin-left: 600px;
+    position: absolute;
+}
+.option{
+    display: grid;
+}
+
+.option div {
+    padding: 10px;
+}
+
+
+form {
+    width: 750px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #eee;
+    display: grid;
+    border-radius: 5%;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: auto;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+button:hover {
+    background-color: rgb(1, 1, 22);
+}
+
+.employee {
+    display: flex;
+    max-width: 790px;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+}
+
+.employee h2{
+    display: flex;
+    flex-basis: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.employee figure {
+    width: 180px;
+} 
+
 .sociallinks a{
     padding: 10px;
 }
