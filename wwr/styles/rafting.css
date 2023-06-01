@@ -199,7 +199,7 @@ footer p {
     display: flex;
     max-width: 940px;
     flex-wrap: wrap;
-    
+    margin-top: 10px;
 }
 
 .Info {
@@ -213,7 +213,7 @@ footer p {
 .map {
     display: grid;
     place-items: center;
-    margin-top: 10px;
+    margin-bottom: 100px;
 }
 
 
@@ -282,7 +282,6 @@ button:hover {
     max-width: 790px;
     flex-wrap: wrap;
     justify-content:space-between;
-
 }
 
 .employee h2{
@@ -290,6 +289,8 @@ button:hover {
     flex-basis: 100%;
     padding: 10px;
     justify-content: center;
+    position: absolute;
+    margin-top: -70px
 }
 
 .employee figure {
@@ -528,12 +529,11 @@ tbody {
 }
 
 th, td {
-  padding: 5px 10px;
-  border-top-width: 0;
-  border-left-width: 0;
-}
+    padding: 5px 10px;
+    border-top-width: 0;
+    border-left-width: 0;
+  }
 
 .news {
-    background-color: #f5f3bb;
-    
+    background-color: #ffffff;
 }
