@@ -93,7 +93,6 @@ header nav a{
     list-style: none;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   
 }
 
 nav a:hover {
@@ -138,24 +137,25 @@ h1, h2, h3, h4, h5, h6 {
 .hero h1{
     position: absolute;
     background-color: hsl(200, 95%, 14%, 0.5);
-    width: 900px;
+    width: 920px;
     top: 50px;
     left: 0px;
+    margin-right: 100px;
     text-align: center;
     color: #FFFFFF;
 }
 
 
 .hero article {
-    position: absolute;
+   position: absolute;
     background-color: hsl(192, 70%, 43%, 0.5);
     width: 800px;
-    top: 150px;
+    top: 100px;
     left: 50px;
     text-align: left;
     padding-top: 20px;
     padding-left: 10px;
-    
+ 
 }
 
 footer {
@@ -300,16 +300,240 @@ button:hover {
     padding: 10px;
 }
 
-footer .sociallinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  background-color: #ffffff;
-}
-
 footer .sociallinks img {
   max-width: 50px;
   margin-bottom: 10px;
   background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--paragrah-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+p {
+    padding: 25px;
+}
+
+.hero {
+    position: relative;
+} 
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+.hero article img {
+    width: 200px;
+    float: right; 
+    
+}
+
+article {
+    position: absolute;
+    top: 250px;
+    padding: 20px;
+    background-color: rgba(245, 243, 187, .70);
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    width: 94%;
+    gap: 10px
+}
+
+.adventure img {
+    max-width: 100%;
+}
+
+.adventure figcaption {
+    text-align: center;
+    background-color: rgba(245, 243, 187, .90);
+}
+
+figure {
+   margin: 0;
+}
+
+
+.employee {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    width: 94%;
+    gap: 10px
+}
+
+.employee img {
+    max-width: 100%;
+}
+
+.employee figcaption {
+    text-align: center;
+    background-color: rgba(245, 243, 187, .90);
+}
+
+.comment-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: .8rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.button {
+    margin: 1rem;
+    background-color: #5bc0eb;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: #5bc0eb;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #e88d67;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    width: auto;
+    gap: 10px
+    
+}
+
+.trip1 figcaption {
+    text-align:center;
+    font-size:1.5rem;
+    padding: 10px;
+    font-family: 'Josefin Slab';
+    color: #5bc0eb;
+
+}
+
+.trip2 figcaption {
+    text-align: center;
+    font-size:1.5rem;
+    padding: 10px;
+    font-family: 'Josefin Slab';
+    color: #5bc0eb;
+
+}
+
+.trip3 figcaption {
+    text-align: center;
+    font-size:1.5rem;
+    padding: 10px;
+    font-family: 'Josefin Slab';
+    color: #5bc0eb
+
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  max-width: 512px;
+  height: 117px;
+  margin: 0 auto;
+  display: block;
+  border-spacing: 0;
+}
+
+tbody {
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 5px 10px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.news {
+    background-color: #f5f3bb;
+    
 }
